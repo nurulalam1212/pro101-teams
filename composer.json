@@ -1,0 +1,21 @@
+{
+    "name": "nurul/pro101-teams",
+    "description": "Wordpress plugin repository",
+    "type": "wordpress-plugin",
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nurul Alam",
+            "email": "nurul.alam.anik@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+        "psr-4" : {
+            "Inc\\" : "./inc"
+        }
+    }
+}
