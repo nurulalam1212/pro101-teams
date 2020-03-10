@@ -12,16 +12,18 @@
      * add service as an array item
      * @return array
      */
-    public static function getServices()
+    private static function getServices()
     {
         return [
-            
+            Pages\Admin::class,
+            Base\Enqueue::class,
+            Base\SettingsLink::class
         ];
     }
 
-    public static function instantiate($class) {
-        $instance = new $class;
-        return $instance;
+    private static function instantiate($class) {
+        $service = new $class;
+        return $service;
     }
 
     public static function register_services()
